@@ -27,10 +27,10 @@ Resources:
       NetworkMode: awsvpc
       RequiresCompatibilities:
         - FARGATE
-      ExecutionRoleArn: arn:aws:iam::153265898954:role/LabRole
+      ExecutionRoleArn: arn:aws:iam::310034235193:role/LabRole
       ContainerDefinitions:
         - Name: crud-sqlite-api
-          Image: 153265898954.dkr.ecr.us-east-1.amazonaws.com/crud-sqlite-api:latest
+          Image: 310034235193.dkr.ecr.us-east-1.amazonaws.com/crud-sqlite-api:latest
           PortMappings:
             - ContainerPort: 8000
               Protocol: tcp
