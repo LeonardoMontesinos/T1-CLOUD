@@ -6,14 +6,14 @@ import json
 # -----------------------------
 # Configuración
 # -----------------------------
-aws_account_id = "<MI_CUENTA>"  # reemplazar
+aws_account_id = "310034235193"  # reemplazar
 cluster_name = "pulumi-crud-cluster"
 container_name = "api-crud"
 container_port = 5000
-execution_role_arn = "arn:aws:iam::478701513931:role/LabRole"
+execution_role_arn = "arn:aws:iam::310034235193:role/LabRole"
 
-subnets = ["subnet-xxxxxx"]         # reemplazar
-security_groups = ["sg-xxxxxx"]     # reemplazar
+subnets = ["subnet-0291c47f7c74c8b64"]         # reemplazar
+security_groups = ["sg-0b546e2ac3353c9e8"]     # reemplazar
 
 # -----------------------------
 # Cluster ECS
