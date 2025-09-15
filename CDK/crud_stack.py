@@ -34,7 +34,7 @@ class CrudStack(Stack):
             memory_limit_mib=512,
             execution_role=iam.Role.from_role_arn(
                 self, "LabRoleExec",
-                role_arn="arn:aws:iam::153265898954:role/LabRole"
+                role_arn="arn:aws:iam::310034235193:role/LabRole"
             ),
         )
 
@@ -42,7 +42,7 @@ class CrudStack(Stack):
         task_def.add_container(
             "CrudContainer",
             image=ecs.ContainerImage.from_registry(
-                "153265898954.dkr.ecr.us-east-1.amazonaws.com/crud-sqlite-api:latest"
+                "310034235193.dkr.ecr.us-east-1.amazonaws.com/crud-sqlite-api:latest"
             ),
             port_mappings=[ecs.PortMapping(container_port=8000)]
         )
