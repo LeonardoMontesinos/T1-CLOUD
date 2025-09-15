@@ -11,6 +11,6 @@ variable "container_port" {
 }
 
 variable "image" {
-  default = "mi-cuenta-aws.dkr.ecr.us-east-1.amazonaws.com/api-crud:latest"
+  default = "310034235193.dkr.ecr.us-east-1.amazonaws.com/api-crud:latest"
 }
 
