@@ -5,7 +5,7 @@ resource "aws_ecs_task_definition" "api_task" {
   cpu                      = "256"
   memory                   = "512"
 
-  execution_role_arn = "arn:aws:iam::478701513931:role/LabRole"
+  execution_role_arn = "arn:aws:iam::310034235193:role/LabRole"
 
   container_definitions = jsonencode([
     {
@@ -30,8 +30,8 @@ resource "aws_ecs_service" "api_service" {
   launch_type     = "FARGATE"
 
   network_configuration {
-    subnets         = ["subnet-xxxxxx"] # reemplazar con tus subnets
-    security_groups = ["sg-xxxxxx"]     # reemplazar con tu SG
+    subnets         = ["subnet-0291c47f7c74c8b64"] # reemplazar con tus subnets
+    security_groups = ["sg-0b546e2ac3353c9e8"]     # reemplazar con tu SG
     assign_public_ip = true
   }
 }
